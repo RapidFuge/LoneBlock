@@ -4,56 +4,68 @@ on:
   push:
     tags:
       - 'v*.*.*' # Trigger on version tags, e.g., v1.0.0
-  workflow_dispatch:
+  workflow_dispatch: # Allow manual triggering of the workflow
     inputs:
-      version:
-        description: "Version tag for the release (e.g., v1.0.0)"
-        required: true
+      tag_name:
+        description: "Tag for the release (e.g., v1.0.0)"
+        required: false
+      release_name:
+        description: "Release name (defaults to tag name)"
+        required: false
 
 jobs:
   release:
     runs-on: ubuntu-latest
 
     steps:
-    # Checkout the repository
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    # Set up Go
-    - name: Set up Go
-      uses: actions/setup-go@v4
-      with:
-        go-version: 1.21  # Adjust the Go version as needed
+      # Set up Go
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.21  # Adjust the Go version as needed
 
-    # Install packwiz
-    - name: Install Packwiz
-      run: |
-        go install github.com/packwiz/packwiz@latest
-        export PATH=$PATH:$(go env GOPATH)/bin
+      # Install packwiz
+      - name: Install Packwiz
+        run: |
+          go install github.com/packwiz/packwiz@latest
+          export PATH=$PATH:$(go env GOPATH)/bin
 
-    # Run packwiz modrinth export
-    - name: Generate .mrpack file
-      run: |
-        packwiz modrinth export -o modpack.mrpack
+      # Run packwiz modrinth export
+      - name: Generate .mrpack file
+        run: |
+          packwiz modrinth export -o modpack.mrpack
 
-    # Prepare other assets (example: README.md or custom files)
-    - name: Prepare Assets
-      run: |
-        cp README.md release-notes.txt || echo "No README found"
-        # Add any other asset preparation logic here
+      # Create the GitHub release
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
+          release_name: ${{ github.event.inputs.release_name || github.ref_name }}
+          body: "Automatically generated release"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    # Upload multiple assets as release files
-    - name: Create Release
-      uses: actions/create-release@v1
-      with:
-        tag_name: ${{ github.event.inputs.version || github.ref_name }}
-        body: 'Automatically generated release'
-        release_name: ${{ github.event.inputs.version || github.ref_name }}
-        draft: false
-        prerelease: false
-        generate_release_notes: true
-        assets: |
-          modpack.mrpack
-          Create_LoneBlock_1.20.1.world.zip
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Upload modpack.mrpack
+      - name: Upload modpack.mrpack
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: modpack.mrpack
+          asset_name: modpack.mrpack
+          asset_content_type: application/octet-stream
+
+      # Upload world.zip
+      - name: Upload world.zip
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: world.zip
+          asset_name: world.zip
+          asset_content_type: application/zip
