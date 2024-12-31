@@ -3,7 +3,7 @@ name: Packwiz Modrinth Export and Release
 on:
   push:
     tags:
-      - 'v*.*.*' # Trigger on version tags, e.g., v1.0.0
+      - "v*.*.*" # Trigger on version tags, e.g., v1.0.0
   workflow_dispatch: # Allow manual triggering of the workflow
     inputs:
       tag_name:
@@ -26,7 +26,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: 1.21  # Adjust the Go version as needed
+          go-version: 1.21 # Adjust the Go version as needed
 
       # Install packwiz
       - name: Install Packwiz
@@ -70,6 +70,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: world.zip
-          asset_name: world.zip
+          asset_path: Create_LoneBlock_1.20.1.world.zip
+          asset_name: Create_LoneBlock_1.20.1.world.zip
           asset_content_type: application/zip
