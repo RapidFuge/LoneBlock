@@ -1,0 +1,15 @@
+{
+  "automaticallyStart": true,
+  "automaticallyFinish": true,
+  "showRecordingToasts": true,
+  "quicksave": true,
+  "hidePauseMenuControls": false,
+  "markDimensionChanges": true,
+  "recordHotbar": true,
+  "localPlayerUpdatesPerSecond": 20,
+  "recordVoiceChat": true,
+  "openedWindows": [
+    "player_list"
+  ],
+  "nextUnsupportedModLoaderWarning": 0
+}

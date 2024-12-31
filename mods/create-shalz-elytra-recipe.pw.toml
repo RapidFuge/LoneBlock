@@ -1,0 +1,13 @@
+name = "Create: Shalz Elytra Recipe"
+filename = "create-shalz-elytra-recipe-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Cn1bCBRf/versions/rJp0BnAi/create-shalz-elytra-recipe-1.0.0.jar"
+hash-format = "sha512"
+hash = "7a7950dc64ccf0c4ec33f62d9ac4f37b8cb95597b000393b83a62cb8a5b90af9c3c88448b7e218763d593f20badc1d1487033096afde19dcd50e8e3187a97acd"
+
+[update]
+[update.modrinth]
+mod-id = "Cn1bCBRf"
+version = "rJp0BnAi"

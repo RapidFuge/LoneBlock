@@ -1,0 +1,238 @@
+{
+  "selections": {
+    "mode": "SIMPLE"
+  },
+  "placements": {
+    "placements": [
+      {
+        "schematic": "E:\\Modrinth launcher\\profiles\\Shalz One Block Survival Create 1.0.0\\schematics\\fast_and_small_cobblestone_gen.nbt",
+        "name": "fast_and_small_cobblestone_gen (Converted Structure)",
+        "origin": [
+          9,
+          67,
+          -2
+        ],
+        "rotation": "NONE",
+        "mirror": "NONE",
+        "ignore_entities": false,
+        "enabled": true,
+        "enable_render": true,
+        "render_enclosing_box": false,
+        "locked": false,
+        "locked_coords": 0,
+        "bb_color": 16757504,
+        "verifier_type": "all",
+        "placements": [
+          {
+            "name": "fast_and_small_cobblestone_gen (Converted Structure)",
+            "placement": {
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "name": "fast_and_small_cobblestone_gen (Converted Structure)",
+              "rotation": "NONE",
+              "mirror": "NONE",
+              "locked_coords": 0,
+              "enabled": true,
+              "rendering_enabled": true,
+              "ignore_entities": false
+            }
+          }
+        ]
+      },
+      {
+        "schematic": "E:\\Modrinth launcher\\profiles\\Shalz One Block Survival Create 1.0.0\\schematics\\andesite_alloy_farm.nbt",
+        "name": "andesite_alloy_farm (Converted Structure)",
+        "origin": [
+          -29,
+          70,
+          -31
+        ],
+        "rotation": "NONE",
+        "mirror": "NONE",
+        "ignore_entities": false,
+        "enabled": true,
+        "enable_render": true,
+        "render_enclosing_box": false,
+        "locked": false,
+        "locked_coords": 0,
+        "bb_color": 16738304,
+        "verifier_type": "all",
+        "placements": [
+          {
+            "name": "andesite_alloy_farm (Converted Structure)",
+            "placement": {
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "name": "andesite_alloy_farm (Converted Structure)",
+              "rotation": "NONE",
+              "mirror": "NONE",
+              "locked_coords": 0,
+              "enabled": true,
+              "rendering_enabled": true,
+              "ignore_entities": false
+            }
+          }
+        ]
+      },
+      {
+        "schematic": "E:\\Modrinth launcher\\profiles\\Shalz One Block Survival Create 1.0.0\\schematics\\andesite_alloy_farm.nbt",
+        "name": "andesite_alloy_farm (Converted Structure)",
+        "origin": [
+          10,
+          66,
+          21
+        ],
+        "rotation": "NONE",
+        "mirror": "NONE",
+        "ignore_entities": false,
+        "enabled": true,
+        "enable_render": true,
+        "render_enclosing_box": false,
+        "locked": false,
+        "locked_coords": 0,
+        "bb_color": 8404597,
+        "verifier_type": "all",
+        "placements": [
+          {
+            "name": "andesite_alloy_farm (Converted Structure)",
+            "placement": {
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "name": "andesite_alloy_farm (Converted Structure)",
+              "rotation": "NONE",
+              "mirror": "NONE",
+              "locked_coords": 0,
+              "enabled": true,
+              "rendering_enabled": true,
+              "ignore_entities": false
+            }
+          }
+        ]
+      },
+      {
+        "schematic": "E:\\Modrinth launcher\\profiles\\Shalz One Block Survival Create 1.0.0\\schematics\\5x5x6_lvl9_steam_engine-1.nbt",
+        "name": "5x5x6_lvl9_steam_engine-1 (Converted Structure)",
+        "origin": [
+          11,
+          66,
+          13
+        ],
+        "rotation": "NONE",
+        "mirror": "NONE",
+        "ignore_entities": false,
+        "enabled": true,
+        "enable_render": true,
+        "render_enclosing_box": false,
+        "locked": false,
+        "locked_coords": 0,
+        "bb_color": 10927575,
+        "verifier_type": "all",
+        "placements": [
+          {
+            "name": "5x5x6_lvl9_steam_engine-1 (Converted Structure)",
+            "placement": {
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "name": "5x5x6_lvl9_steam_engine-1 (Converted Structure)",
+              "rotation": "NONE",
+              "mirror": "NONE",
+              "locked_coords": 0,
+              "enabled": true,
+              "rendering_enabled": true,
+              "ignore_entities": false
+            }
+          }
+        ]
+      },
+      {
+        "schematic": "E:\\Modrinth launcher\\profiles\\Shalz One Block Survival Create 1.0.0\\schematics\\andesite_alloy_farm.nbt",
+        "name": "andesite_alloy_farm (Converted Structure)",
+        "origin": [
+          163,
+          98,
+          64
+        ],
+        "rotation": "CLOCKWISE_90",
+        "mirror": "NONE",
+        "ignore_entities": false,
+        "enabled": true,
+        "enable_render": true,
+        "render_enclosing_box": false,
+        "locked": false,
+        "locked_coords": 0,
+        "bb_color": 12648480,
+        "verifier_type": "all",
+        "placements": [
+          {
+            "name": "andesite_alloy_farm (Converted Structure)",
+            "placement": {
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "name": "andesite_alloy_farm (Converted Structure)",
+              "rotation": "NONE",
+              "mirror": "NONE",
+              "locked_coords": 0,
+              "enabled": true,
+              "rendering_enabled": true,
+              "ignore_entities": false
+            }
+          }
+        ]
+      }
+    ],
+    "selected": 4,
+    "origin_selected": true
+  },
+  "schematic_projects_manager": {},
+  "operation_mode": "PASTE_SCHEMATIC",
+  "render_range": {
+    "mode": "ALL",
+    "axis": "y",
+    "layer_single": 0,
+    "layer_above": 0,
+    "layer_below": 0,
+    "layer_range_min": 0,
+    "layer_range_max": 0,
+    "hotkey_range_min": false,
+    "hotkey_range_max": false
+  },
+  "area_simple": {
+    "name": "Unnamed",
+    "current": "Unnamed",
+    "boxes": [
+      {
+        "pos1": [
+          10015,
+          80,
+          10067
+        ],
+        "pos2": [
+          10023,
+          73,
+          10076
+        ],
+        "name": "Unnamed"
+      }
+    ]
+  },
+  "tool_mode_data": {
+    "delete": {
+      "use_placement": false
+    }
+  }
+}

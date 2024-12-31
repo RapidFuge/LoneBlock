@@ -1,0 +1,10 @@
+{
+  "notifyGlobal": true,
+  "notifyChat": true,
+  "notifyHud": true,
+  "bypassHeld": false,
+  "bypassAll": false,
+  "bypassOffhand": false,
+  "emptyLock": false,
+  "hotbarVisible": false
+}

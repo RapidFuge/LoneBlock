@@ -1,0 +1,62 @@
+{
+  "version": 4,
+  "defaultConflictStrategy": "SUBMIT",
+  "defaultSendMode": "SEND",
+  "profiles": [
+    {
+      "version": 2,
+      "name": "",
+      "addresses": [],
+      "addToHistory": "OFF",
+      "showHudMessage": "OFF",
+      "macros": []
+    },
+    {
+      "version": 2,
+      "name": "Default Profile",
+      "addresses": [],
+      "addToHistory": "OFF",
+      "showHudMessage": "OFF",
+      "macros": [
+        {
+          "version": 3,
+          "addToHistory": false,
+          "showHudMessage": false,
+          "conflictStrategy": "ASSERT",
+          "sendMode": "SEND",
+          "spaceTicks": 0,
+          "keyName": "key.keyboard.b",
+          "limitKeyName": "key.keyboard.unknown",
+          "messages": [
+            {
+              "version": 1,
+              "enabled": true,
+              "string": "/ability2",
+              "delayTicks": 0
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "addToHistory": false,
+          "showHudMessage": false,
+          "conflictStrategy": "ASSERT",
+          "sendMode": "SEND",
+          "spaceTicks": 0,
+          "keyName": "key.keyboard.caps.lock",
+          "limitKeyName": "key.keyboard.unknown",
+          "messages": [
+            {
+              "version": 1,
+              "enabled": true,
+              "string": "/ability1",
+              "delayTicks": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "spDefault": 0,
+  "mpDefault": 0
+}

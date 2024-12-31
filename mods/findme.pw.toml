@@ -1,0 +1,13 @@
+name = "FindMe"
+filename = "findme-3.2.1-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/rEuzehyH/versions/GWd8Gpye/findme-3.2.1-fabric.jar"
+hash-format = "sha512"
+hash = "48d34fe2956b04fc0b3d52cd83d2b3785714dc2c3f4fb3cfb6afdffa7f502b5b4914d3e7b0edf790672cae5a907d43c7c081d5ce8ea7488081214addffe2cbbd"
+
+[update]
+[update.modrinth]
+mod-id = "rEuzehyH"
+version = "GWd8Gpye"

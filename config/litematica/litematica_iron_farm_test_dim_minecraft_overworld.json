@@ -1,0 +1,44 @@
+{
+  "selections": {
+    "mode": "SIMPLE"
+  },
+  "placements": {},
+  "schematic_projects_manager": {},
+  "operation_mode": "AREA_SELECTION",
+  "render_range": {
+    "mode": "ALL",
+    "axis": "y",
+    "layer_single": 0,
+    "layer_above": 0,
+    "layer_below": 0,
+    "layer_range_min": 0,
+    "layer_range_max": 0,
+    "hotkey_range_min": false,
+    "hotkey_range_max": false
+  },
+  "area_simple": {
+    "name": "IRON FARM BLOCKSWAPPED",
+    "current": "IRON FARM BLOCKSWAPPED",
+    "boxes": [
+      {
+        "pos1": [
+          -58,
+          69,
+          120
+        ],
+        "pos2": [
+          -58,
+          69,
+          120
+        ],
+        "name": "IRON FARM BLOCKSWAPPED"
+      }
+    ]
+  },
+  "tool_mode_data": {
+    "delete": {
+      "use_placement": false
+    }
+  },
+  "block_entities": {}
+}
