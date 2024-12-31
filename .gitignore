@@ -3,3 +3,5 @@
 
 # Exclude exported Modrinth modpacks
 *.mrpack
+
+!Create_LoneBlock_1.20.1.world.zip
