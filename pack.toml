@@ -1,12 +1,12 @@
 name = "Create: Lone Block"
 author = "RapidFuge"
-version = "1.0.0"
+version = "1.0.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "944be05f525edeb7de093e09bd143eb41f7106f440761325a4879087c8b6886a"
+hash = "eb037e4d2148c1c6378c99de39b6f4b375b7793c9db4615cdac24f8ff69086de"
 
 [versions]
 fabric = "0.16.9"
